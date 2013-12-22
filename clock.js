@@ -51,12 +51,11 @@ tft.on('connect', function(){
 		if (last_second != current_second){ tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 35, last_second); }
 
 		tft.fg_color(tft.color.white);
-		if (last_hour != current_hour){ tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 45, current_hour); }
-		if (last_minute != current_minute){ tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 30, current_minute); }
-		if (last_second != current_second){ 
-			tft.fg_color(tft.color.red);
-			tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 35, current_second);
-		}
+		tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 45, current_hour);
+		tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 30, current_minute);
+		
+		tft.fg_color(tft.color.red);
+		tft.analog_hand(tft.screen.width_half, tft.screen.height_half, tft.screen.height_half - 35, current_second);
 
 		tft.fg_color(tft.color.white);
 		tft.goto_char(1, 14);
