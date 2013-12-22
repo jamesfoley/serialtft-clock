@@ -1,0 +1,23 @@
+{
+  "name": "serialtft-clock",
+  "version": "0.0.1",
+  "description": "Clock built for the serialtft module",
+  "dependencies": {
+    "moment": "~2.4.0",
+    "serialtft": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesfoley/serialtft-clock"
+  },
+  "keywords": [
+    "serialtft",
+    "clock"
+  ],
+  "author": "James Foley",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jamesfoley/serialtft-clock/issues"
+  },
+  "homepage": "https://github.com/jamesfoley/serialtft-clock"
+}
